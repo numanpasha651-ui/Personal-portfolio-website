@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | BCA Student Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name, a BCA student building web and AI projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">Your Name</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="hello">Hi, I'm Your Name.</p>
+      <h1>I build websites and AI tools that solve real problems.</h1>
+      <p class="lead">BCA student at Your College, learning full-stack development and machine learning.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn" href="resume.pdf" download>Download resume</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>I'm a Bachelor of Computer Applications student who enjoys turning ideas into working software. I like Python, web development and local AI tools, and I'm looking for an internship where I can learn from a real team.</p>
+      <p>Outside coding, I enjoy (add your hobbies here).</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li>
+        <li>SQL / MySQL</li><li>Git and GitHub</li><li>Java (basic)</li><li>VS Code</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>AI Assistant</h3>
+          <p>A local-first personal AI assistant that runs models on my own computer using Ollama.</p>
+          <p class="tags">Python, Ollama</p>
+          <a href="https://github.com/your-username/ai-assistant">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h3>Student Management System</h3>
+          <p>Add, edit and delete student records with login and reports.</p>
+          <p class="tags">Python, SQLite</p>
+          <a href="https://github.com/your-username/student-management">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h3>Expense Tracker</h3>
+          <p>Tracks daily spending by category and shows a monthly summary.</p>
+          <p class="tags">JavaScript, HTML, CSS</p>
+          <a href="https://github.com/your-username/expense-tracker">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Send me a message and I'll reply by email.</p>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <p class="error" id="formError" role="alert"></p>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+      <p class="links">
+        <a href="https://github.com/your-username">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-username">LinkedIn</a>
+        <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Your Name</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
